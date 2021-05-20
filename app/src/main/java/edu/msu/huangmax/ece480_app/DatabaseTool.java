@@ -21,7 +21,7 @@ public class DatabaseTool {
     private SharedPreferences settings;
     private String userId;
     private String birthday;
-    private final String link = "https://webdev.cse.msu.edu/~huangmax/ece480/ece480app/";
+    private final String link = "https://webdev.cse.msu.edu/~rumptzja/ece480/ece480app/";
 
     public DatabaseTool(String id, String birthday) {
         /* FOR TESTING ONLY */

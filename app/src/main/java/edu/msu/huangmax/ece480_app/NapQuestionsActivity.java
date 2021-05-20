@@ -65,4 +65,9 @@ public class NapQuestionsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ThankYouActivity.class);
         startActivity(intent);
     }
+
+    public void onPressBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

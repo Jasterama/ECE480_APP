@@ -2,6 +2,7 @@ package edu.msu.huangmax.ece480_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -64,6 +65,11 @@ public class WakeUpQuestionsActivity extends AppCompatActivity {
         databaseTool.writeWakeUpQuestions(responses);
 
         Intent intent = new Intent(this, ThankYouActivity.class);
+        startActivity(intent);
+    }
+
+    public void onPressBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

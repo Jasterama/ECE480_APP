@@ -12,7 +12,7 @@ COL_HEADERS = { "wakeup_questions":
 "timer_usage":
 ["Start Date", "Start Time", "End Date", "End Time", "User ID"] }
 
-BASE_REQUEST = 'https://webdev.cse.msu.edu/~huangmax/ece480/ece480app/retrieve_data.php?table='
+BASE_REQUEST = 'https://webdev.cse.msu.edu/~rumptzja/ece480/ece480app/retrieve_data.php?table='
 
 def main():
     for table in COL_HEADERS:

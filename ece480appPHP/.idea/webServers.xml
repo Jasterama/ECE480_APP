@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0c20f827-6632-46ee-94f3-2b6f20af012c" name="ece480-app" url="http://webdev.cse.msu.edu/~huangmax/ece480/ece480app">
-        <fileTransfer rootFolder="/user/huangmax/classweb/ece480/ece480app" accessType="SFTP" host="arctic.cse.msu.edu" port="22" sshConfigId="1431bc11-c8b9-4f45-b7d3-659f6d583503" sshConfig="huangmax@arctic.cse.msu.edu:22 password">
+      <webServer id="0c20f827-6632-46ee-94f3-2b6f20af012c" name="ece480-app" url="http://webdev.cse.msu.edu/~rumptzja/ece480/ece480app">
+        <fileTransfer rootFolder="/user/rumptzja/classweb/ece480/ece480app" accessType="SFTP" host="arctic.cse.msu.edu" port="22" sshConfigId="1431bc11-c8b9-4f45-b7d3-659f6d583503" sshConfig="rumptzja@arctic.cse.msu.edu:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

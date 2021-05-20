@@ -130,4 +130,14 @@
         android:text="@string/submit"
         android:textSize="28sp" />
 
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButtonWakeup"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPressBack"
+        android:text="@string/back"
+        android:textSize="28sp" />
+
 </RelativeLayout>

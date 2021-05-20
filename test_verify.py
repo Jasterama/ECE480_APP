@@ -3,7 +3,7 @@ import csv
 import requests
 
 
-BASE_REQUEST = 'https://webdev.cse.msu.edu/~huangmax/ece480/ece480app/verify_user.php?user_id=4&birthday=\"7/14/1999\"'
+BASE_REQUEST = 'https://webdev.cse.msu.edu/~rumptzja/ece480/ece480app/verify_user.php?user_id=4&birthday=\"7/14/1999\"'
 
 def main():
     query = BASE_REQUEST

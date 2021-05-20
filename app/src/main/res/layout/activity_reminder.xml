@@ -35,4 +35,15 @@
         android:layout_below="@id/time_entry_use"
         android:layout_centerHorizontal="true"
         android:text="@string/set" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPressBack"
+        android:text="@string/back" />
+
+
 </RelativeLayout>
