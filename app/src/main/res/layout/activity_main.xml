@@ -247,4 +247,12 @@
             android:textSize="18sp" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical"
+        android:paddingTop="50dp"
+        android:text="@string/version" />
+
 </LinearLayout>
