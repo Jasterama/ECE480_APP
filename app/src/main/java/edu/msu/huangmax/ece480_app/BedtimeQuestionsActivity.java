@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class BedtimeQuestionsActivity extends AppCompatActivity {
 
@@ -38,10 +39,10 @@ public class BedtimeQuestionsActivity extends AppCompatActivity {
         EditText getter;
         getter = findViewById(R.id.bedtimeEntry);
         responses[0] = getter.getText().toString();
-        getter = findViewById(R.id.fatigueLevel);
-        responses[1] = getter.getText().toString();
-        getter = findViewById(R.id.sleepinessLevel);
-        responses[2] = getter.getText().toString();
+        Spinner fatigueLevel = findViewById(R.id.spinner1);
+        responses[1] = fatigueLevel.getSelectedItem().toString();
+        Spinner sleepinessLevel = findViewById(R.id.spinner2);
+        responses[2] = sleepinessLevel.getSelectedItem().toString();
 
         databaseTool.writeBedtimeQuestions(responses);
 

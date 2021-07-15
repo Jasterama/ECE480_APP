@@ -13,6 +13,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 import java.util.Calendar;
@@ -42,12 +43,23 @@ public class ReminderActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Calendar calendar = Calendar.getInstance();
+                Calendar alertCalender = Calendar.getInstance();
+
+                CheckBox pmCheck = findViewById(R.id.checkBox);
 
                 EditText text = findViewById(R.id.reminder_time);
                 String userInput = text.getText().toString();
 
                 int colon = userInput.indexOf(':');
+
                 String hour = userInput.substring(0, colon);
+                int hourInt = 0;
+                if (pmCheck.isChecked()) {
+                    hourInt = Integer.parseInt(hour);
+                    hourInt += 12;
+                    hour = Integer.toString(hourInt);
+                }
+
                 String minute = userInput.substring(colon + 1);
 
                 System.out.println(hour + ":" + minute);
@@ -56,13 +68,24 @@ public class ReminderActivity extends AppCompatActivity {
                 calendar.set(Calendar.MINUTE, Integer.parseInt(minute));
                 calendar.set(Calendar.SECOND, 0);
 
+                alertCalender.set(Calendar.HOUR_OF_DAY, Integer.parseInt(hour));
+                alertCalender.set(Calendar.MINUTE, Integer.parseInt(minute));
+                alertCalender.set(Calendar.SECOND, 0);
+                alertCalender.add(Calendar.MINUTE, 20);
+
                 Intent intent = new Intent(getApplicationContext(), NotificationReceiver.class);
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
                         1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
+                Intent alertIntent = new Intent(getApplicationContext(), NotificationReceiver.class);
+                PendingIntent pendingAlertIntent = PendingIntent.getBroadcast(getApplicationContext(),
+                        1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
                 AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
                 alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
                         AlarmManager.INTERVAL_DAY, pendingIntent);
+                alarmManager.set(AlarmManager.RTC_WAKEUP, alertCalender.getTimeInMillis(),
+                        pendingAlertIntent);
                 onSubmit();
             }
         });

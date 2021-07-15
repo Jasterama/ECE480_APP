@@ -40,9 +40,9 @@
     <string name="thirdNap">3rd Nap</string>
     <string name="bedTime">Bed Time:</string>
     <string name="bedtimeFatigue">In the last 24 hours, what was your average level of fatigue? </string>
-    <string name="fatigueExplanation">Please enter a number from 0 to 10; 0 means no fatigue, 10 means worst fatigue</string>
+    <string name="fatigueExplanation">Please select a number from 0 to 10; 0 means no fatigue, 10 means worst fatigue</string>
     <string name="bedtimeSleepiness">During the day, what was your average level of sleepiness?</string>
-    <string name="sleepinessExplanation">Please enter a number from 0 to 10; 0 means no sleepiness, 10 means worst sleepiness</string>
+    <string name="sleepinessExplanation">Please select a number from 0 to 10; 0 means no sleepiness, 10 means worst sleepiness</string>
     <string name="my_info">My Info</string>
     <string name="name">Name</string>
     <string name="nameInput">Name:</string>
@@ -54,6 +54,7 @@
     <string name="set">Set</string>
     <string name="id">ID: </string>
     <string name="blank"> </string>
+    <string name="email">Email</string>
     <string name="change">Change ID</string>
     <string name="enter_id">Enter ID: </string>
     <string name="enter_birthday">Enter Birthday: </string>
@@ -66,8 +67,21 @@
     <string name="menu_howto">How To Use Video</string>
     <string name="how_to_video">How To Video</string>
     <string name="introduction_video">Introduction Video</string>
-    <string name="set_time_use">Please use 24-hour time format.  For example, 9:00PM should be entered as 21:00.</string>
+    <string name="set_time_use">Please enter using time format (ex. 12:00). The default is AM, select PM for PM time</string>
     <string name="back_to_home">Back To Home</string>
     <string name="back">Back</string>
     <string name="version">App Version 0.0.0</string>
+    <string name="pm">PM</string>
+    <string-array name="ratings">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 </resources>

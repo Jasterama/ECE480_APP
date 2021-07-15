@@ -65,21 +65,19 @@
         android:text="@string/fatigueExplanation"
         android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/fatigueLevel"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fatigueExplanation"
-        android:layout_centerInParent="true"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number" />
+        android:drawSelectorOnTop="true"
+        android:entries="@array/ratings" />
 
     <View
         android:id="@+id/spacerThree"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_below="@id/fatigueLevel" />
+        android:layout_below="@id/spinner1" />
 
     <TextView
         android:id="@+id/bedtimeSleepiness"
@@ -102,21 +100,19 @@
         android:text="@string/sleepinessExplanation"
         android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/sleepinessLevel"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sleepinessExplanation"
-        android:layout_centerInParent="true"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number" />
+        android:drawSelectorOnTop="true"
+        android:entries="@array/ratings" />
 
     <View
         android:id="@+id/spacerFour"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_below="@id/sleepinessLevel" />
+        android:layout_below="@id/spinner2" />
 
     <Button
         android:id="@+id/submitButtonBedtime"
