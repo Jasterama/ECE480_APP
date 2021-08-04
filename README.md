@@ -141,10 +141,10 @@ First you need to make sure you have Android Studio Installed on your computer. 
 
 **Download Light Therapy Smartphone Application**
 
-Download the app from the link using an Android device: https://github.com/MaHuCS/LightTherapyLog
+Download the app from the link using an Android device: https://github.com/Jasterama/ECE480_APP
 
 
-1. Download the APK from the link – you should then be able to see it downloading on the top bar of your device
+1. Download app-debug.apk in the APK folder from the link – you should then be able to see it downloading on the top bar of your device
 2. Once it's downloaded, open Downloads, tap on the APK file, and tap Yes when prompted
 3. The app will begin installing on the device
 
