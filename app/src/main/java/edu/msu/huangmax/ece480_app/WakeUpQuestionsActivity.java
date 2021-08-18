@@ -57,8 +57,8 @@ public class WakeUpQuestionsActivity extends AppCompatActivity {
             return;
         }
 
-        EditText wakeUpTimeGet = findViewById(R.id.editTextTime);
-        responses[0] = wakeUpTimeGet.getText().toString();
+        Spinner wakeUpTimeGet = findViewById(R.id.spinnerwakeUp);
+        responses[0] = wakeUpTimeGet.getSelectedItem().toString();
         for (int i = 0; i < spinners.length; i++) {
             responses[i + 1] = spinners[i].getSelectedItem().toString();
         }

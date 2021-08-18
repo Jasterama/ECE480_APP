@@ -36,9 +36,8 @@ public class BedtimeQuestionsActivity extends AppCompatActivity {
             return;
         }
 
-        EditText getter;
-        getter = findViewById(R.id.bedtimeEntry);
-        responses[0] = getter.getText().toString();
+        Spinner getter = findViewById(R.id.spinnerBedTime);
+        responses[0] = getter.getSelectedItem().toString();
         Spinner fatigueLevel = findViewById(R.id.spinner1);
         responses[1] = fatigueLevel.getSelectedItem().toString();
         Spinner sleepinessLevel = findViewById(R.id.spinner2);

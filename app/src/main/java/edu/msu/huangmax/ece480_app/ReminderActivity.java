@@ -12,11 +12,15 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class ReminderActivity extends AppCompatActivity {
 
@@ -60,6 +64,7 @@ public class ReminderActivity extends AppCompatActivity {
                     hour = Integer.toString(hourInt);
                 }
 
+
                 String minute = userInput.substring(colon + 1);
 
                 System.out.println(hour + ":" + minute);
@@ -77,7 +82,7 @@ public class ReminderActivity extends AppCompatActivity {
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
                         1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-                Intent alertIntent = new Intent(getApplicationContext(), NotificationReceiver.class);
+                Intent alertIntent = new Intent(getApplicationContext(), AlertReceiver.class);
                 PendingIntent pendingAlertIntent = PendingIntent.getBroadcast(getApplicationContext(),
                         1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 

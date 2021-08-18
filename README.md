@@ -24,23 +24,6 @@ This class is responsible for all internet-based activities in the app.  It cont
 
 This class represents the screen that is visible after selecting the "help" icon on the home screen.  Once you click on the help button off the home screen, you will be prompted three buttons. One button labeled "Introduction Video" will lead you to an Introduction Video provided by the College of Nursing. The second button labeled "How To Video" will lead you to a How to Video provided by the College of Nursing. Lastly, there is a "Back To Home" button that will take you back to the Home Screen.
 
-**HELP BUTTON VIDEO REPLACEMENT**
-
-First download and name the video you would like to implement into the app.
-Place that video into the raw folder under app/src/main/res/ in your directory.
-Depending on if you are changing the How To Video or the Introduction Video, you will go to HowToVideoActivity or IntroVideoActivity.
-You will see a line of code like this: ``` Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.videoclip2);```
-You will change the “videoclip2” to what the name of the new video is.
-Then you will go to activity_help.xml
-You will click on the Design tab
-Then you will go to Text
-You will erase what was there before, and put in a new label for the initial help screen button.
-You will then see a yellow triangle warning sign
-Click on the warning and look down to where it says Hardcoded Text.
-Open that warning message and click fix, then ok.
-
-
-
 ### My Info Activity
 
 This class represents the screen that is visible after selecting the "my info" icon on the home screen.  This page will show the user his or her unique id number, and have a button to enter a new id number, if his or her current one is incorrect.
@@ -158,10 +141,10 @@ First you need to make sure you have Android Studio Installed on your computer. 
 
 **Download Light Therapy Smartphone Application**
 
-Download the app from the link using an Android device: https://github.com/MaHuCS/LightTherapyLog
+Download the app from the link using an Android device: https://github.com/Jasterama/ECE480_APP
 
 
-1. Download the APK from the link – you should then be able to see it downloading on the top bar of your device
+1. Download the app-debug.apk in the APK folder from the link – you should then be able to see it downloading on the top bar of your device
 2. Once it's downloaded, open Downloads, tap on the APK file, and tap Yes when prompted
 3. The app will begin installing on the device
 

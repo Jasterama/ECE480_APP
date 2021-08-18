@@ -72,6 +72,7 @@
     <string name="back">Back</string>
     <string name="version">App Version 0.0.0</string>
     <string name="pm">PM</string>
+    <string name="curr_remind">Current Reminders</string>
     <string-array name="ratings">
         <item>1</item>
         <item>2</item>
@@ -83,5 +84,55 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+    </string-array>
+    <string-array name="times">
+        <item>12:00AM</item>
+        <item>12:30AM</item>
+        <item>1:00AM</item>
+        <item>1:30AM</item>
+        <item>2:00AM</item>
+        <item>2:30AM</item>
+        <item>3:00AM</item>
+        <item>3:30AM</item>
+        <item>4:00AM</item>
+        <item>4:30AM</item>
+        <item>5:00AM</item>
+        <item>5:30AM</item>
+        <item>6:00AM</item>
+        <item>6:30AM</item>
+        <item>7:00AM</item>
+        <item>7:30AM</item>
+        <item>8:00AM</item>
+        <item>8:30AM</item>
+        <item>9:00AM</item>
+        <item>9:30AM</item>
+        <item>10:00AM</item>
+        <item>10:30AM</item>
+        <item>11:00AM</item>
+        <item>11:30AM</item>
+        <item>12:00PM</item>
+        <item>12:30PM</item>
+        <item>1:00PM</item>
+        <item>1:30PM</item>
+        <item>2:00PM</item>
+        <item>2:30PM</item>
+        <item>3:00PM</item>
+        <item>3:30PM</item>
+        <item>4:00PM</item>
+        <item>4:30PM</item>
+        <item>5:00PM</item>
+        <item>5:30PM</item>
+        <item>6:00PM</item>
+        <item>6:30PM</item>
+        <item>7:00PM</item>
+        <item>7:30PM</item>
+        <item>8:00PM</item>
+        <item>8:30PM</item>
+        <item>9:00PM</item>
+        <item>9:30PM</item>
+        <item>10:00PM</item>
+        <item>10:30PM</item>
+        <item>11:00PM</item>
+        <item>11:30PM</item>
     </string-array>
 </resources>

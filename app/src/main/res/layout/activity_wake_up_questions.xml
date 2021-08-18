@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/spacerOne"
-        android:layout_alignBottom="@id/editTextTime"
+        android:layout_alignBottom="@id/spinnerwakeUp"
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
@@ -24,18 +24,15 @@
         android:textColor="#000000"
         android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinnerwakeUp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/spacerOne"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@id/wakeUpTime"
-        android:autofillHints=""
-        android:ems="10"
         android:gravity="center"
-        android:hint="@string/enterTimeHere"
-        android:inputType="time" />
+        android:entries="@array/times"/>
 
     <View
         android:id="@+id/spacerTwo"
