@@ -9,11 +9,11 @@ if (!$con) {
 $submit_time = $_GET['submit_time'];
 $time = $_GET['time'];
 $user_id = $_GET['user_id'];
-$response1 = $_GET['response1'];
-$response2 = $_GET['response2'];
-$response3 = $_GET['response3'];
+$difficulty_sleeping = $_GET['difficulty_sleeping'];
+$waking_up_during = $_GET['waking_up_during'];
+$woke_up_early = $_GET['woke_up_early'];
 
-$query = "INSERT INTO wakeup_questions VALUES ('$submit_time', '$time', '$response1', '$response2', '$response3', '$user_id')";
+$query = "INSERT INTO wakeup_questions VALUES ('$submit_time', '$time', '$difficulty_sleeping', '$waking_up_during', '$woke_up_early', '$user_id')";
 
 if(mysqli_query($con, $query)){
     echo 'Data Submitted Successfully';

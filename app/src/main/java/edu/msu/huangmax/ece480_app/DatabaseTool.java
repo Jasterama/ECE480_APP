@@ -82,8 +82,8 @@ public class DatabaseTool {
                     try  {
                         String writeLink = link;
                         writeLink += "wakeup_insert.php?" + "submit_time=" + time + "&user_id="
-                                + userId + "&time=" + responses[0] + "&response1=" + responses[1]
-                                + "&response2=" + responses[2] + "&response3=" + responses[3];
+                                + userId + "&time=" + responses[0] + "&difficulty_sleeping=" + responses[1]
+                                + "&waking_up_during=" + responses[2] + "&woke_up_early=" + responses[3];
                         for (int i = 0; i < writeLink.length(); i++) {
                             if (writeLink.charAt(i) == ' ') {
                                 writeLink = writeLink.substring(0, i) + '+' + writeLink.substring(i + 1);
