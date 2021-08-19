@@ -84,13 +84,14 @@ public class ReminderActivity extends AppCompatActivity {
 
                 Intent alertIntent = new Intent(getApplicationContext(), AlertReceiver.class);
                 PendingIntent pendingAlertIntent = PendingIntent.getBroadcast(getApplicationContext(),
-                        1, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+                        2, alertIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                 AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
                 alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
                         AlarmManager.INTERVAL_DAY, pendingIntent);
                 alarmManager.set(AlarmManager.RTC_WAKEUP, alertCalender.getTimeInMillis(),
                         pendingAlertIntent);
+
                 onSubmit();
             }
         });
